@@ -21,6 +21,6 @@ const extensionLoader = require('cypress-browser-extension-plugin/loader');
 module.exports = (on) => {
   // `on` is used to hook into various events Cypress emits
   // `config` is the resolved Cypress config
-  on('before:browser:launch', extensionLoader.load('/Users/wandachi/Desktop/extension_SB_AD/extension_blockAD'));
+  on('before:browser:launch', extensionLoader.load('./extension_SB_AD/extension_blockAD'));
     
 }

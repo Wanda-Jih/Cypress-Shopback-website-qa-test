@@ -2,11 +2,12 @@
 import users from "../../../helper/user";
 import url from "../../../helper/url";
 
+// check to search for specific item from different countries site
 describe('頁面測試', ()=>{
 
     //choose country site
     const countrySite=url.TW
-    const product="iphone" //product="純萃保濕化妝水200ml"
+    const product="iphone" 
     before('openWeb',() =>cy.visit(countrySite))
     after(() => cy.clearCookies())
 
@@ -40,23 +41,15 @@ describe('頁面測試', ()=>{
 
     })
 
-
-
-
-
-
-    
     it.skip('login',()=>{
         //cypress/support/commands.js
         //helper/user.js
-        //choose user
         cy.login(users.userTW2)
         
     })
  
-    //const product="iphone" //product="純萃保濕化妝水200ml"
     it.skip('search product',()=>{
-        //點擊logo
+        // click logo
         cy.get('.react-autosuggest__container').find('input').type(product).type('{enter}')
         cy.get('.logo').click()
     })
