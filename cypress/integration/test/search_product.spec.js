@@ -37,7 +37,7 @@ describe('頁面測試', ()=>{
                 if(price!=""){
                     lowPrice=price[0].replace(/[^\d.]/g,"")
                     highPrice=price[1].replace(/[^\d.]/g,"")
-                    expect(lowPrice<highPrice).to.true //這裡報錯
+                    expect(lowPrice<highPrice).to.true 
                 }
             }
             else{
