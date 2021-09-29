@@ -16,6 +16,7 @@ Cypress is a purely JavaScript-based front end testing tool built for the modern
 These test cases are the most commonly used, and if they could be automated, it would save a lot of time for those manual testers.
 
 > /cypress/integration/test/
+
 > /cypress/support/command.js
 
 * Login, logout
